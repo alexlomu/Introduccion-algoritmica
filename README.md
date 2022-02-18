@@ -90,7 +90,34 @@ Sí, en el caso de tener un triángulo rectángulo introduciríamos las medidas 
 
 #Ejercicio 11
 Algoritmo salario_horas_extras
-
+Entrada:
+  Horas: REAL #Numero de horas total trabajadas
+Resultado: REAL
+Precondición:
+  Horas > 8  
+Realización:
+  si horas < 36: TARIFA NORMAL * Horas
+  si horas > 35 y horas < 44: (TARIFA NORMAL * 35) + (Horas - 35) * 1,25
+  si horas > 43: (TARIFA NORMAL * 35) + (TARIFA NORMAL * 1,25 * 8) + (Horas - 43) * 1,50
+Poscondición:
+  si horas < 36:  Resultado = TARIFA NORMAL * Horas
+  si horas > 35 y horas < 44: Resultado = (TARIFA NORMAL * 35) + (Horas - 35) * 1,25
+  si horas > 43: Resultado = (TARIFA NORMAL * 35) + (TARIFA NORMAL * 1,25 * 8) + (Horas - 43) * 1,50
   
   
   
+  
+#Ejercicio 12
+Algoritmo cuenta_deposito
+Entrada:
+  Datos cuenta: TEXTO #Credenciales de acceso a la cuenta
+  Dinero a extraer: REAL #Cantidad a extraer
+Resultado: BOOLEANO
+Precondición:
+  Dinero cuenta > 0
+  Dinero a extraer > 0
+  Dienero a extraer < Dinero cuenta
+Realización
+  sí se puede extraer: Nuevo dinero cuenta = Dinero cuenta - Dinero a extraer
+Poscondición
+  sí se puede extraer: Nuevo dinero cuenta = Dinero cuenta - Dinero a extraer
