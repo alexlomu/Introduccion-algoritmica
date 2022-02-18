@@ -1,1 +1,1 @@
-# Introducci-n-algor-tmica
+# Introduccion-algoritmica
